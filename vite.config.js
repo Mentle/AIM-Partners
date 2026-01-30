@@ -13,7 +13,7 @@ export default defineConfig({
       }
     }
   ],
-  base: '/',
+  base: '/AIM-Partners/',
   build: {
     outDir: 'docs'
   }
