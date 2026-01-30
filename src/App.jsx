@@ -28,7 +28,7 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    const mailtoLink = `mailto:info@aimpartners.hk?subject=Contact from ${formData.name}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)}`
+    const mailtoLink = `mailto:i.aquino@aimpartners.hk,m.marques@aimpartners.hk?subject=Contact from ${formData.name}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)}`
     window.location.href = mailtoLink
     setFormStatus('Opening your email client...')
   }
@@ -196,12 +196,19 @@ function App() {
             </div>
           </div>
           
-          <div className="text-center mb-12">
+          <div className="text-center mb-12 space-y-2">
             <a
-              href="mailto:info@aimpartners.hk"
-              className="text-xl text-accent hover:text-primary font-semibold transition-colors inline-block"
+              href="mailto:i.aquino@aimpartners.hk"
+              className="text-lg text-accent hover:text-primary font-semibold transition-colors inline-block"
             >
-              info@aimpartners.hk
+              i.aquino@aimpartners.hk
+            </a>
+            <span className="text-text-400 mx-3">|</span>
+            <a
+              href="mailto:m.marques@aimpartners.hk"
+              className="text-lg text-accent hover:text-primary font-semibold transition-colors inline-block"
+            >
+              m.marques@aimpartners.hk
             </a>
           </div>
 
