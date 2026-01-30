@@ -9,9 +9,12 @@ export default defineConfig({
     {
       name: 'copy-cname',
       closeBundle() {
-        copyFileSync('CNAME', 'dist/CNAME')
+        copyFileSync('CNAME', 'docs/CNAME')
       }
     }
   ],
-  base: '/AIM-Partners/',
+  base: '/',
+  build: {
+    outDir: 'docs'
+  }
 })
